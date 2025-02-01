@@ -6,6 +6,43 @@
     <title> ES6 </title>
 </head>
 <body>
+
+    <script type="module" defer>
+    import user, { otherUser, userVar, UserClass } from './app.js'
+
+
+    user();
+    otherUser()
+    console.log(userVar);
+    
+
+    let UC1 = new UserClass();
+    UC1.test()
+
+
+    // .....Generators.........
+
+    function* stp(){
+      let a= 10;
+      let b = 25;
+      console.log(a + b);
+      yield " done"
+      console.log(a - b);
+      yield "2nd done"
+      console.log(a * b);
+      yield " 3rd done"
+      console.log(a % b);
+      yield "4th done"
+
+    }
+    let xyz= stp()
+    console.log(xyz.next());
+    console.log(xyz.next());
+    console.log(xyz.next());
+    console.log(xyz.next());
+      
+   
+  </script>
   <script src="app.js"></script>  
 </body>
 </html>
