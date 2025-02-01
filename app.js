@@ -66,5 +66,37 @@ console.log("asdfghjklzxcvbnm, dfghjkertyuiovnm, fghjkrtyuiocvnm,./rtyuidfghjkcv
 console.log(`${abc} ${ijk}`);
 
 
+//  Exponentiation operator  //
+//  how to get power of a number **
+
+console.log(3 * 4);
+console.log(3 ** 4);
+console.log(10 ** NaN);
+console.log(2 ** (3 ** 2));
+console.log(2 ** 3 ** 2);
+
+// ..............  modules   ........... 
+
+
+export default function user() {
+    console.log("Hello World");
+    
+}
+
+export function otherUser() {
+    console.log("Same to you");
+    
+}
+ export let userVar = "Hello world Again"
+
+ export class UserClass {
+    test() {
+        console.log("user class again");
+        
+    }
+ }
+
+
+
 
 
